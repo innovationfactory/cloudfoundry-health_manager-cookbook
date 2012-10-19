@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-ruby_path    = File.join(rbenv_root, "versions", node.cloudfoundry_common.ruby_1_9_2_version, "bin")
+ruby_path    = File.join(rbenv_root, "versions", node['cloudfoundry_common']['ruby_1_9_2_version'], "bin")
 install_path = File.join(node['cloudfoundry_common']['vcap']['install_path'], "cloud_controller", "health_manager")
 
 cloudfoundry_component "health_manager" do
